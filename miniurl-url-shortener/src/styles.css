@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap");
+
+/* font-family: "Roboto Slab", serif; */
+
+:root {
+  --font: 1rem "Roboto Slab", serif;
+  --primary-color: #01c5c4;
+  --secondary-color: #212121;
+  --tertiary-color: #19d3da;
+  --disabled-bg-color: #aaaaaa;
+  --disabled-text-color: #838383;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: #fff;
+}
+
+.header {
+  padding: 10px 30px;
+  font: var(--font);
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.header > h1 {
+  color: var(--secondary-color);
+}
+
+.main-content {
+  padding: 230px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-form {
+  margin-bottom: 100px;
+}
+
+.main-content-form > * {
+  font: var(--font);
+  font-size: 1.2rem;
+  padding: 5px;
+  color: var(--secondary-color);
+}
+
+.main-content-form-input {
+  width: 500px;
+}
+
+.main-content-form-btn {
+  width: 150px;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-style: solid;
+}
+
+.main-content-form-btn:hover {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.main-content-form-btn:disabled {
+  background-color: var(--disabled-bg-color);
+  border-color: var(--disabled-bg-color);
+  color: var(--disabled-text-color);
+}
+
+.main-content-form-btn:disabled:hover {
+  cursor: default;
+}
+
+.main-content-minified-url-p {
+  font: var(--font);
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  width: 500px;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font: var(--font);
+}
